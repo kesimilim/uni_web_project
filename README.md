@@ -16,5 +16,3 @@ Learning university web project
 
 ## Lecture 2
 Ссылка на разборку проекта: https://www.figma.com/file/nLhKfYK0fyh2919wZKeZXd/Web-Lecture-2?node-id=0-1&t=HtL8DIYccR7QcmGh-0
-
-## Lecture 3
