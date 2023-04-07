@@ -6,87 +6,87 @@
     </head>
     <body>
         <header class="header">
-            <a class="header_logo" href="/">Recipes</a>
-            <nav class="header_nav">
-                <ul class="header_nav_ul">
-                    <li class="header_nav_ul_li"><a class="header_nav_ul_li_a">Главная</a></li>
-                    <li class="header_nav_ul_li"><a class="header_nav_ul_li_a">Рецепты</a></li>
-                    <li class="header_nav_ul_li"><a class="header_nav_ul_li_a">Избранное</a></li>
+            <a class="header__logo" href="/">Recipes</a>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="header__nav--list--item"><a class="header__nav--list--link">Главная</a></li>
+                    <li class="header__nav--list--item"><a class="header__nav--list--link">Рецепты</a></li>
+                    <li class="header__nav--list--item"><a class="header__nav--list--link">Избранное</a></li>
                 </ul>
             </nav>
-            <div class="header_div">
-                <img class="header_div_img">
-                <a class="head_div_login" href="#">Войти</a>
+            <div class="header__auth">
+                <img class="header__auth--img">
+                <a class="header__auth--link" href="#">Войти</a>
             </div>
         </header>
         <main class="main">
-            <section class="main_section_add_recipe">
-                <h2 class="main_section_add_recipe_h2">Готовь и делись рецептами</h2>
-                <p class="main_section_add_recipe_p">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
-                <button class="main_section_add_recipe_button_add">+ Добавить рецепт</button>
-                <button class="main_section_add_recipe_button_login">Войти</button>
+            <section class="section__add-recipe">
+                <h2 class="section__add-recipe--title">Готовь и делись рецептами</h2>
+                <p class="section__add-recipe--desc">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
+                <button class="section__add-recipe--button--add">+ Добавить рецепт</button>
+                <button class="section__add-recipe--button--auth">Войти</button>
             </section>
-            <section class="main_section_tag">
-                <h2 class="main_section_tag_h2">Умная сортировка по тегам</h2>
-                <p class="main_section_tag_p">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.</p>
-                <ul class="main_section_tag_ul">
-                    <li class="main_section_tag_ul_il">
-                        <img>
-                        <h3>Простые блюда</h3>
-                        <p>Время приготвления таких блюд не более 1 часа</p>
+            <section class="section__tags">
+                <h2 class="section__tags--title">Умная сортировка по тегам</h2>
+                <p class="section__tags--desc">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.</p>
+                <ul class="section__tags--list">
+                    <li class="section__tags--list--item">
+                        <img class="section__tags--list--item--img">
+                        <h3 class="section__tags--list--item--title">Простые блюда</h3>
+                        <p class="section__tags--list--item--desc">Время приготвления таких блюд не более 1 часа</p>
                     </li>
-                    <li class="main_section_tag_ul_il">
-                        <img>
-                        <h3 class="main_section_tag_ul_il_h3">Детское</h3>
-                        <p class="main_section_tag_ul_il_p">Самые полезные блюда которые можно детям любого возраста</p>
+                    <li class="section__tags--list--item">
+                        <img class="section__tags--list--item--img">
+                        <h3 class="section__tags--list--item--title">Детское</h3>
+                        <p class="section__tags--list--item--desc">Самые полезные блюда которые можно детям любого возраста</p>
                     </li>
-                    <li class="main_section_tag_ul_il">
-                        <img>
-                        <h3 class="main_section_tag_ul_il_h3">От шеф-поваров</h3>
-                        <p class="main_section_tag_ul_il_p">Требуют умения, времени и терпения, зато как в ресторане</p>
+                    <li class="section__tags--list--item">
+                        <img class="section__tags--list--item--img">
+                        <h3 class="section__tags--list--item--title">От шеф-поваров</h3>
+                        <p class="section__tags--list--item--desc">Требуют умения, времени и терпения, зато как в ресторане</p>
                     </li>
-                    <li class="main_section_tag_ul_il">
-                        <img>
-                        <h3 class="main_section_tag_ul_il_h3">На праздник</h3>
-                        <p class="main_section_tag_ul_il_p">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+                    <li class="section__tags--list--item">
+                        <img class="section__tags--list--item--img">
+                        <h3 class="section__tags--list--item--title">На праздник</h3>
+                        <p class="section__tags--list--item--desc">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
                     </li>
                 </ul>
             </section>
-            <section class="main_section_recipe_of_day">
+            <section class="section__recipe-of-day">
                 <img>
-                <a class="main_section_recipe_of_day_a">@glazest</a>
-                <div class="main_section_recipe_of_day_div">
-                    <img>
-                    <h2 class="main_section_recipe_of_day_div_h2">Тыквенный супчик на кокосовом молоке</h2>
-                    <p class="main_section_recipe_of_day_div_p">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост! </p>
-                    <div class="main_section_recipe_of_day_div_div">
-                        <img>
-                        <p class="main_section_recipe_of_day_div_div_p">356</p>
+                <a class="section__recipe-of-day--author-link">@glazest</a>
+                <div class="section__recipe-of-day--box-desc">
+                    <img class="section__recipe-of-day--box--img">
+                    <h2 class="section__recipe-of-day--box--title">Тыквенный супчик на кокосовом молоке</h2>
+                    <p class="section__recipe-of-day--box--desc">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост! </p>
+                    <div class="section__recipe-of-day--box-fav">
+                        <img class="section__recipe-of-day--box-fav--img">
+                        <p class="section__recipe-of-day--box-fav--text">356</p>
                     </div>
-                    <div class="main_section_recipe_of_day_div_div">
-                        <img>
-                        <p class="main_section_recipe_of_day_div_div_p">35  минут</p>
+                    <div class="section__recipe-of-day--box-times">
+                        <img class="section__recipe-of-day--box-times--img">
+                        <p class="section__recipe-of-day--box-times--text">35 минут</p>
                     </div>
                 </div>
             </section>
-            <section class="main_section_find">
-                <h2 class="main_section_find_h2">Поиск рецептов</h2>
-                <p>Введите примерное название блюда, а мы по тегам найдем его</p>
-                <div class="main_section_find_div">
-                    <input class="main_section_find_div_input">
-                    <button class="main_section_find_div_button">Поиск</button>
+            <section class="section__search">
+                <h2 class="section__search--title">Поиск рецептов</h2>
+                <p class="section__search--desc">Введите примерное название блюда, а мы по тегам найдем его</p>
+                <div class="section__search--box">
+                    <input class="section__search--box--input">
+                    <button class="section__search--box--button">Поиск</button>
                 </div>
-                <ul class="main_section_find_ul">
-                    <li class="main_section_find_ul_li"><a class="main_section_find_ul_li_a">Мясо</a></li>
-                    <li class="main_section_find_ul_li"><a class="main_section_find_ul_li_a">Деликатесы</a></li>
-                    <li class="main_section_find_ul_li"><a class="main_section_find_ul_li_a">Пироги</a></li>
-                    <li class="main_section_find_ul_li"><a class="main_section_find_ul_li_a">Рыба</a></li>
+                <ul class="section__search--list">
+                    <li class="section__search--list--item"><a class="section__search--list--link">Мясо</a></li>
+                    <li class="section__search--list--item"><a class="section__search--list--link">Деликатесы</a></li>
+                    <li class="section__search--list--item"><a class="section__search--list--link">Пироги</a></li>
+                    <li class="section__search--list--item"><a class="section__search--list--link">Рыба</a></li>
                 </ul>
             </section>
         </main>
         <footer class="footer">
-            <p class="footer_logo">Recipes</p>
-            <p class="footer_copypast">© Recipes 2021</p>
+            <p class="footer__logo">Recipes</p>
+            <p class="footer__copypast">© Recipes 2021</p>
         </footer>
     </body>
 </html>
