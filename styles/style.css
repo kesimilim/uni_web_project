@@ -1,8 +1,192 @@
+@font-face {
+    font-family: "Montserrat700";
+    src: url(../fonts/Montserrat-Bold-700.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat500";
+    src: url(../fonts/Montserrat-Medium-500.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat400";
+    src: url(../fonts/Montserrat-Regular-400.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat600";
+    src: url(../fonts/Montserrat-SemiBold-600.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Mulish400";
+    src: url(../fonts/Mulish-Regular-400.woff) format("woff");
+}
+
 .header__logo {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
     color: #FDB100;
 }
 
-.header__nav--list--link {
+.header__nav-link {
+    font-family: 'Montserrat600';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
     color: #9196A1;
 }
 
+.header__auth-link {
+    font-family: 'Montserrat600';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FDB100;
+}
+
+.add-recipe__title {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    color: #25292D;
+}
+
+.add-recipe__desc {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4A525A;
+}
+
+.add-recipe__button-add {
+
+}
+
+.add-recipe__button-auth {
+
+}
+
+.tags__title {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: #25292D;
+}
+
+.tags__desc {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4A525A;
+}
+
+.tags__item-title {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #25292D;
+}
+
+.tags__item-desc {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4A525A;
+}
+
+.recipe-of-day__author-link {
+    font-family: 'Montserrat600';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FDB100;
+}
+
+.recipe-of-day__box-title {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: #25292D;
+}
+
+.recipe-of-day__box-desc {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4A525A;
+}
+
+.recipe-of-day__box-fav-text {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #25292D;
+}
+
+.recipe-of-day__box-times-text {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #25292D;
+}
+
+.search__title {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: #25292D;
+}
+
+.search__desc {
+    font-family: 'Mulish400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4A525A;
+}
+
+.search__box-input {
+
+}
+
+.search__box-button {
+
+}
+
+.search__list-link {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #4A525A;
+}
+
+.footer__logo {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #FDB100;
+}
+
+.footer__copypast {
+    font-family: 'Montserrat500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #4A525A;
+}
