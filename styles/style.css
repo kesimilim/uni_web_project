@@ -32,7 +32,7 @@
 }
 
 .header__nav-link {
-    font-family: 'Montserrat600';
+    font-family: 'Montserrat400';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -64,11 +64,33 @@
 }
 
 .add-recipe__button-add {
-
+    position: absolute;
+    background-color: #FDB100;
+    color: #fff;
+    border: none; 
+    border-radius: 16px; 
+    min-height: 60px; 
+    min-width: 278px;
+    font-family: 'Montserrat600';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-right: 24px;
 }
 
 .add-recipe__button-auth {
-
+    position: absolute;
+    background-color: white;
+    color: #FDB100;
+    border: 1px solid #FDB100; 
+    border-radius: 16px; 
+    min-height: 60px; 
+    min-width: 216px;
+    font-family: 'Montserrat600';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 302px;
 }
 
 .tags__title {
@@ -160,11 +182,32 @@
 }
 
 .search__box-input {
-
+    min-height: 73px; 
+    min-width: 278px;
+    background: white;
+    border: none;
+    box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+    border-radius: 16px;
+    margin-right: 16px;
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color:  #808080;
 }
 
 .search__box-button {
-
+    position: absolute;
+    background-color: #FDB100;
+    color: #fff;
+    border: none; 
+    border-radius: 16px; 
+    min-height: 73px; 
+    min-width: 152px;
+    font-family: 'Montserrat600';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .search__list-link {
@@ -172,7 +215,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    color: #4A525A;
+    color: #808080;
 }
 
 .footer__logo {

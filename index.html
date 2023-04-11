@@ -27,8 +27,10 @@
             <section class="add-recipe">
                 <h2 class="add-recipe__title">Готовь и делись рецептами</h2>
                 <p class="add-recipe__desc">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
-                <button class="add-recipe__button-add">+ Добавить рецепт</button>
-                <button class="add-recipe__button-auth">Войти</button>
+                <div class="add-recipe__button">
+                    <button class="add-recipe__button-add">+ Добавить рецепт</button>
+                    <button class="add-recipe__button-auth">Войти</button>
+                </div>
             </section>
             <section class="tags">
                 <h2 class="tags__title">Умная сортировка по тегам</h2>
@@ -77,7 +79,7 @@
                 <h2 class="search__title">Поиск рецептов</h2>
                 <p class="search__desc">Введите примерное название блюда, а мы по тегам найдем его</p>
                 <div class="search__box">
-                    <input class="search__box-input">
+                    <input class="search__box-input" type="text" value="Название блюда....">
                     <button class="search__box-button">Поиск</button>
                 </div>
                 <ul class="search__list">
