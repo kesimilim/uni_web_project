@@ -23,6 +23,14 @@
     src: url(../fonts/Mulish-Regular-400.woff) format("woff");
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
 .header__logo {
     font-family: 'Montserrat700';
     font-style: normal;
@@ -31,12 +39,46 @@
     color: #FDB100;
 }
 
-.header__nav-link {
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 565px;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 344px;
+    height: 22px;
+}
+
+.header__nav-item {
     font-family: 'Montserrat400';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    line-height: 22px;
     color: #9196A1;
+    list-style-type: none;
+    width: 100%;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #9196A1;
+}
+
+.header__nav-link:hover {
+    color: #3A3C41;
+}
+
+.header__auth {
+    display: flex;
+    height: 38px;
+    max-width: 112px;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .header__auth-link {
@@ -45,6 +87,13 @@
     font-weight: normal;
     font-size: 18px;
     color: #FDB100;
+    margin-left: 14px;
+}
+
+.add-recipe {
+    max-width: 1440px;
+    height: 800px;
+    padding-left: 120px;
 }
 
 .add-recipe__title {
@@ -53,6 +102,7 @@
     font-weight: normal;
     font-size: 72px;
     color: #25292D;
+    text-align: left;
 }
 
 .add-recipe__desc {
@@ -61,6 +111,14 @@
     font-weight: normal;
     font-size: 18px;
     color: #4A525A;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.add-recipe__buttons {
+    max-width: 500px;
+    display: block;
 }
 
 .add-recipe__button-add {
@@ -93,6 +151,13 @@
     margin-left: 302px;
 }
 
+.tags {
+    display: inline-block;
+    padding-top: 113px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
 .tags__title {
     font-family: 'Montserrat700';
     font-style: normal;
@@ -109,6 +174,24 @@
     color: #4A525A;
 }
 
+.tags__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 42px;
+}
+
+.tags__item {
+    min-width: 278px;
+    min-height: 271px;
+    background-color: white;
+    box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+    border-radius: 24px;
+    padding: 24px;
+    padding-bottom: 32px;
+    margin-right: 29px;
+}
+
 .tags__item-title {
     font-family: 'Montserrat700';
     font-style: normal;
@@ -123,6 +206,8 @@
     font-weight: normal;
     font-size: 18px;
     color: #4A525A;
+    max-width: 230px;
+    line-height: 30px;
 }
 
 .recipe-of-day__author-link {
@@ -216,6 +301,15 @@
     font-weight: normal;
     font-size: 16px;
     color: #808080;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100%;
 }
 
 .footer__logo {
