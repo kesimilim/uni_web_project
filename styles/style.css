@@ -1,40 +1,64 @@
 @font-face {
-    font-family: "Montserrat700";
-    src: url(../fonts/Montserrat-Bold-700.woff) format("woff");
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat500";
-    src: url(../fonts/Montserrat-Medium-500.woff) format("woff");
+    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat400";
-    src: url(../fonts/Montserrat-Regular-400.woff) format("woff");
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat600";
-    src: url(../fonts/Montserrat-SemiBold-600.woff) format("woff");
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Mulish400";
+    font-family: "Mulish";
     src: url(../fonts/Mulish-Regular-400.woff) format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+body {
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
     display: flex;
+    position: fixed;
     align-items: center;
     padding-top: 40px;
     padding-left: 120px;
     padding-right: 120px;
 }
 
+.header--bg {
+    background-color: #FEFEFB;
+}
+
 .header__logo {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 24px;
     color: #FDB100;
 }
@@ -43,7 +67,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 565px;
 }
 
 .header__nav-list {
@@ -54,9 +77,9 @@
 }
 
 .header__nav-item {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #9196A1;
@@ -82,9 +105,9 @@
 }
 
 .header__auth-link {
-    font-family: 'Montserrat600';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
     color: #FDB100;
     margin-left: 14px;
@@ -94,26 +117,32 @@
     max-width: 1440px;
     height: 800px;
     padding-left: 120px;
+    background-image: url(../img/img_main.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 211px;
 }
 
 .add-recipe__title {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;;
     font-size: 72px;
     color: #25292D;
     text-align: left;
+    width: 50%;
 }
 
 .add-recipe__desc {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     color: #4A525A;
     padding-top: 15px;
     padding-bottom: 40px;
     text-align: left;
+    width: 50%;
 }
 
 .add-recipe__buttons {
@@ -129,9 +158,9 @@
     border-radius: 16px; 
     min-height: 60px; 
     min-width: 278px;
-    font-family: 'Montserrat600';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
     margin-right: 24px;
 }
@@ -144,9 +173,9 @@
     border-radius: 16px; 
     min-height: 60px; 
     min-width: 216px;
-    font-family: 'Montserrat600';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
     margin-left: 302px;
 }
@@ -159,18 +188,19 @@
 }
 
 .tags__title {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 42px;
     color: #25292D;
 }
 
 .tags__desc {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
+    line-height: 32px;
     color: #4A525A;
 }
 
@@ -179,6 +209,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 42px;
+    list-style: none;
 }
 
 .tags__item {
@@ -192,18 +223,23 @@
     margin-right: 29px;
 }
 
+.tags__item-img {
+    padding-bottom: 24px;
+}
+
 .tags__item-title {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 24px;
     color: #25292D;
+    padding-bottom: 16px;
 }
 
 .tags__item-desc {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     color: #4A525A;
     max-width: 230px;
@@ -211,59 +247,73 @@
 }
 
 .recipe-of-day__author-link {
-    font-family: 'Montserrat600';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     color: #FDB100;
 }
 
 .recipe-of-day__box-title {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 42px;
+    line-height: 60px;
     color: #25292D;
 }
 
 .recipe-of-day__box-desc {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
+    line-height: 32px;
     color: #4A525A;
 }
 
 .recipe-of-day__box-fav-text {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     color: #25292D;
 }
 
 .recipe-of-day__box-times-text {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     color: #25292D;
 }
 
 .search__title {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    
     color: #25292D;
 }
 
 .search__desc {
-    font-family: 'Mulish400';
+    font-family: 'Mulish';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
+    line-height: 32px;
+
+    text-align: center;
+    font-feature-settings: 'case' on;
+
     color: #4A525A;
+}
+
+.search__box {
+
 }
 
 .search__box-input {
@@ -274,11 +324,12 @@
     box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
     border-radius: 16px;
     margin-right: 16px;
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     color:  #808080;
+    padding-left: 32px;
 }
 
 .search__box-button {
@@ -289,16 +340,16 @@
     border-radius: 16px; 
     min-height: 73px; 
     min-width: 152px;
-    font-family: 'Montserrat600';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
 }
 
 .search__list-link {
-    font-family: 'Montserrat400';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     color: #808080;
 }
@@ -307,23 +358,26 @@
     display: flex;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 120px;
     padding-right: 120px;
     width: 100%;
+    background-color: #FBF9F4;
 }
 
 .footer__logo {
-    font-family: 'Montserrat700';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 32px;
+    line-height: 39px;
     color: #FDB100;
 }
 
-.footer__copypast {
+.footer__copyright {
     font-family: 'Montserrat500';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 20px;
     color: #4A525A;
 }
