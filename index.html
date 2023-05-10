@@ -9,97 +9,103 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <div class="header__wrapper">
-                <div class="header__main">
-                    <a class="header__logo" href="/">Recipes</a>
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a class="header__nav-link">Главная</a></li>
-                            <li class="header__nav-item"><a class="header__nav-link">Рецепты</a></li>
-                            <li class="header__nav-item"><a class="header__nav-link">Избранное</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__auth">
-                    <a class="header__auth-link" href="#">Войти</a>
-                </div>
-                </div>
-            </header>
-            <main class="main">
-                <section class="add-recipe">
+        <header class="header">
+            <div class="header__wrapper container">
+            <div class="header__main">
+                <a class="header__logo" href="/">Recipes</a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__nav-link">Главная</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link">Рецепты</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link">Избранное</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <img class="recipe-of-day__box-img" src="img/ic_recipe_of_day.svg"> -->
+            <a class="header__auth-link" href="#">Войти</a>
+            </div>
+        </header>
+        <main class="main">
+            <section class="add-recipe">
+                <div class="add-recipe__wrapper container">
                     <h2 class="add-recipe__title">Готовь и делись рецептами</h2>
                     <p class="add-recipe__desc">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
                     <div class="add-recipe__button">
                         <button class="add-recipe__button-add">+ Добавить рецепт</button>
                         <button class="add-recipe__button-auth">Войти</button>
                     </div>
-                </section>
-                <section class="tags">
-                    <h2 class="tags__title">Умная сортировка по тегам</h2>
-                    <p class="tags__desc">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.</p>
-                    <ul class="tags__list">
-                        <li class="tags__item">
-                            <img class="tags__item-img" src="img/ic_cook_book.svg">
-                            <h3 class="tags__item-title">Простые блюда</h3>
-                            <p class="tags__item-desc">Время приготвления таких блюд не более 1 часа</p>
-                        </li>
-                        <li class="tags__item">
-                            <img class="tags__item-img" src="img/ic_pan.svg">
-                            <h3 class="tags__item-title">Детское</h3>
-                            <p class="tags__item-desc">Самые полезные блюда которые можно детям любого возраста</p>
-                        </li>
-                        <li class="tags__item">
-                            <img class="tags__item-img" src="img/ic_chef_hat.svg">
-                            <h3 class="tags__item-title">От шеф-поваров</h3>
-                            <p class="tags__item-desc">Требуют умения, времени и терпения, зато как в ресторане</p>
-                        </li>
-                        <li class="tags__item">
-                            <img class="tags__item-img" src="img/ic_party.svg">
-                            <h3 class="tags__item-title">На праздник</h3>
-                            <p class="tags__item-desc">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
-                        </li>
-                    </ul>
-                </section>
-                <section class="recipe-of-day">
+                </div>
+            </section>
+            <section class="tags container">
+                <h2 class="tags__title">Умная сортировка по тегам</h2>
+                <p class="tags__desc">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.</p>
+                <ul class="tags__list">
+                    <li class="tags__item">
+                        <img class="tags__item-img" src="img/ic_cook_book.svg">
+                        <h3 class="tags__item-title">Простые блюда</h3>
+                        <p class="tags__item-desc">Время приготвления таких блюд не более 1 часа</p>
+                    </li>
+                    <li class="tags__item">
+                        <img class="tags__item-img" src="img/ic_pan.svg">
+                        <h3 class="tags__item-title">Детское</h3>
+                        <p class="tags__item-desc">Самые полезные блюда которые можно детям любого возраста</p>
+                    </li>
+                    <li class="tags__item">
+                        <img class="tags__item-img" src="img/ic_chef_hat.svg">
+                        <h3 class="tags__item-title">От шеф-поваров</h3>
+                        <p class="tags__item-desc">Требуют умения, времени и терпения, зато как в ресторане</p>
+                    </li>
+                    <li class="tags__item">
+                        <img class="tags__item-img" src="img/ic_party.svg">
+                        <h3 class="tags__item-title">На праздник</h3>
+                        <p class="tags__item-desc">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="recipe-of-day container">
+                <div class="recipe-of-day__author-img">
                     <img class="recipe-of-day__author-img" src="img/img_pumpkin_soup.png">
                     <a class="recipe-of-day__author-link">@glazest</a>
-                    <div class="recipe-of-day__box">
-                        <img class="recipe-of-day__box-img" src="img/ic_recipe_of_day.svg">
-                        <h2 class="recipe-of-day__box-title">Тыквенный супчик на кокосовом молоке</h2>
-                        <p class="recipe-of-day__box-desc">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост! </p>
+                </div>
+                <div class="recipe-of-day__box">
+                    <div class="recipe-of-day__box-img-count">
                         <div class="recipe-of-day__box-fav">
-                            <!-- <img class="recipe-of-day__box-fav-img" src="img/ic_fav.svg"> -->
+                            <img class="recipe-of-day__box-fav-img" src="img/ic_fav.svg">
                             <p class="recipe-of-day__box-fav-text">356</p>
                         </div>
                         <div class="recipe-of-day__box-times">
-                            <!-- <img class="recipe-of-day__box-times-img" src="img/ic_timer.svg"> -->
+                            <img class="recipe-of-day__box-times-img" src="img/ic_timer.svg">
                             <p class="recipe-of-day__box-times-text">35 минут</p>
                         </div>
                     </div>
-                </section>
-                <section class="search">
-                    <h2 class="search__title">Поиск рецептов</h2>
-                    <p class="search__desc">Введите примерное название блюда, а мы по тегам найдем его</p>
-                    <div class="search__box">
-                        <div class="search__box-input">
-                            <input class="search__input" id="find" type="text" value="Название блюда....">
-                            <button class="search__button">Поиск</button>
-                        </div>
+                    <img class="recipe-of-day__box-img" src="img/ic_recipe_of_day.svg">
+                    <h2 class="recipe-of-day__box-title">Тыквенный супчик на кокосовом молоке</h2>
+                    <p class="recipe-of-day__box-desc">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост! </p>
+                </div>
+            </section>
+            <section class="search container">
+                <h2 class="search__title">Поиск рецептов</h2>
+                <p class="search__desc">Введите примерное название блюда, а мы по тегам найдем его</p>
+                <div class="search__box">
+                    <form class="search__box-input">
+
+                        <input class="search__input" id="find" type="text" value="Название блюда....">
+                        <button class="search__button">Поиск</button>
                         <ul class="search__list">
                             <li class="search__list-item"><a class="search__list-link">Мясо</a></li>
                             <li class="search__list-item"><a class="search__list-link">Деликатесы</a></li>
                             <li class="search__list-item"><a class="search__list-link">Пироги</a></li>
                             <li class="search__list-item"><a class="search__list-link">Рыба</a></li>
                         </ul>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_wrapper container">
                 <p class="footer__logo">Recipes</p>
                 <p class="footer__copyright">© Recipes 2021</p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 </html>
