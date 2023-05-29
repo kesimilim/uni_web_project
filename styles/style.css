@@ -1,68 +1,499 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
-    font-weight: 700;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat500";
-    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
-    font-weight: 500;
-    font-display: swap;
+  font-family: 'Montserrat500';
+  src: url(../fonts/Montserrat-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
-    font-weight: 400;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
-    font-weight: 600;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Mulish";
-    src: url(../fonts/Mulish-Regular-400.woff) format("woff");
-    font-weight: 400;
-    font-display: swap;
+  font-family: 'Mulish';
+  src: url(../fonts/Mulish-Regular-400.woff) format('woff');
+  font-weight: 400;
+  font-display: swap;
 }
 
 .container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
+  }
 }
 
-@media (max-width: 1200px) { 
-    .container {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 1024px;
-        margin: 0 auto;
-    }
+@media (max-width: 1024px) {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 1024px) { 
-    .container {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+@media (max-width: 330px) {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 330px) { 
-    .container {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
+.add-recipe-dialog {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.add-recipe-dialog__button_exit {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.add-recipe-dialog__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #25292d;
+}
+
+.add-recipe-dialog__desc {
+}
+
+.add-recipe-dialog__title {
+  margin-top: 19px;
+}
+
+.authorization__form-button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 16px;
+  height: 45px;
+  width: 25%;
+  background-color: #fdb100;
+  border: none;
+  color: #ffffff;
+  font-weight: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.add-recipe-dialog__button {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+
+.add-recipe-dialog__desc {
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.add-recipe-dialog__button-login {
+    background-color: #FDB100;
+  color: #fff;
+  border: none; 
+  border-radius: 16px; 
+  min-height: 60px; 
+  min-width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.add-recipe-dialog__button-registration {
+  max-width: 278px;
+  background-color: transparent;
+  border: 1px solid #fdb100;
+  color: #fdb100;
+  width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 278px;
+
+  background-color: white;
+  color: #FDB100;
+  border: 1px solid #FDB100; 
+  border-radius: 16px; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.add-recipe-dialog__button-registration:hover {
+  color: #ffffff;
+  background-color: #fdb100;
+}
+
+.add-recipe-dialog__button-login:hover {
+  color: #fdb100;
+  background-color: #ffffff;
+  border: 1px solid #fdb100;
+}
+
+.registration {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.registration__button_exit {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.registration__title {
+  margin-top: 20px;
+}
+
+.registration__button {
+  margin-top: 20px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+    .registration__button-reg {
+    background-color: #FDB100;
+  color: #fff;
+  border: none; 
+  border-radius: 16px; 
+  min-height: 60px; 
+  min-width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.registration__button-cancel {
+  max-width: 278px;
+  background-color: transparent;
+  border: 1px solid #fdb100;
+  color: #fdb100;
+  width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 278px;
+
+  background-color: white;
+  color: #FDB100;
+  border: 1px solid #FDB100; 
+  border-radius: 16px; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.registration__button-cancel:hover {
+  color: #ffffff;
+  background-color: #fdb100;
+}
+
+.registration__button-reg:hover {
+  color: #fdb100;
+  background-color: #ffffff;
+  border: 1px solid #fdb100;
+}
+
+.registration__link {
+  position: absolute;
+  width: 237px;
+height: 26px;
+text-align: center;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+color: #FDB100;
+bottom: 60px;
+border-bottom: 2px dashed;
+left: 231px;
+}
+
+.registration__input-name {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 47px;
+}
+
+.registration__input-login {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 20px;
+}
+
+.registration__input {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.registration__input-password {
+  height: 50px;
+  width: 278px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+}
+
+.registration__input-repeat-password {
+  height: 50px;
+  width: 278px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+}
+
+.registration__password-desc {
+  width: 276px;
+height: 28px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 28px;
+/* identical to box height, or 233% */
+
+display: flex;
+align-items: center;
+
+color: rgba(37, 41, 45, 0.3);
+}
+
+.login {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.login__button_exit {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.login__title {
+  margin-top: 20px;
+}
+
+    .login__button {
+  margin-top: 30px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+    .login__button-login {
+    background-color: #FDB100;
+  color: #fff;
+  border: none; 
+  border-radius: 16px; 
+  min-height: 60px; 
+  min-width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.login__button-cancel {
+  max-width: 278px;
+  background-color: transparent;
+  border: 1px solid #fdb100;
+  color: #fdb100;
+  width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 278px;
+
+  background-color: white;
+  color: #FDB100;
+  border: 1px solid #FDB100; 
+  border-radius: 16px; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.login__button-cancel:hover {
+  color: #ffffff;
+  background-color: #fdb100;
+}
+
+.login__button-login:hover {
+  color: #fdb100;
+  background-color: #ffffff;
+  border: 1px solid #fdb100;
+}
+
+.login__link {
+  position: absolute;
+  margin-top: 40px;
+    color: #FDB100;
+  border-bottom: 2px dashed;
+  width: 237px;
+  height: 26px;
+  text-align: center;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  bottom: 60px;
+  left: 231px;
+}
+
+.login__input-login {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 47px;
+}
+
+.login__input-password {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 20px;
 }
