@@ -13,8 +13,13 @@
     <link rel="stylesheet" href="styles/recipe-of-day.css" />
     <link rel="stylesheet" href="styles/search.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <script src="scripts/script.js"></script>
   </head>
   <body>
+    <div id="progress">
+      <img src="img/ic_top.svg" alt="">
+      <!-- <span id="progress-value">&#x1F815;</span> -->
+    </div>
     <header class="header">
       <div class="header__wrapper container">
         <div class="header__main">
@@ -101,8 +106,10 @@
         <div class="recipe-of-day__box">
           <div class="recipe-of-day__box-img-count">
             <div class="recipe-of-day__box-fav">
-              <img class="recipe-of-day__box-fav-img" src="img/ic_fav.svg" />
-              <p class="recipe-of-day__box-fav-text">356</p>
+              <button class="button_fav" type="button">
+                <img class="recipe-of-day__box-fav-img" src="img/ic_fav.svg" />
+              </button>
+              <span class="recipe-of-day__box-fav-text">356</span>
             </div>
             <div class="recipe-of-day__box-times">
               <img

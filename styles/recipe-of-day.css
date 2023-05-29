@@ -97,6 +97,11 @@
 
 }
 
+.button_fav {
+  background-color: transparent;
+  border: none;
+}
+
 /* .recipe-of-day__box-times-text::before {
   content: url(../img/ic_timer.svg);
 } */
