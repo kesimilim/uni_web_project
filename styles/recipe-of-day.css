@@ -102,6 +102,10 @@
   border: none;
 }
 
+.isLike .recipe-of-day__box-fav-img {
+  fill: red
+}
+
 /* .recipe-of-day__box-times-text::before {
   content: url(../img/ic_timer.svg);
 } */
