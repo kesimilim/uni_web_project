@@ -1,0 +1,134 @@
+.recipe-of-day__author-img {
+  position: relative;
+  width: 100%;
+}
+
+.recipe-of-day__author-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FDB100;
+  background-color: #FFFFFF;
+  padding: 4px 16px;
+  position: absolute;
+  top: 435px;
+  left: 0;
+}
+
+.recipe-of-day {
+  display: flex;
+  gap: 73px;
+  padding-top: 157px;
+}
+
+
+/* .recipe-of-day__box-text::before {
+  content: url(../img/ic_recipe_of_day.svg);
+} */
+
+.recipe-of-day__box-img {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.recipe-of-day__box-img-count {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.recipe-of-day__box-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  color: #25292D;
+  padding-top: 32px;
+}
+
+.recipe-of-day__box-desc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #4A525A;
+  padding-top: 16px;
+}
+
+.recipe-of-day__box-fav {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-of-day__box-fav-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #25292D;
+  padding-left: 9px;
+}
+
+/* .recipe-of-day__box-fav-text::before {
+  content: url(../img/ic_fav.svg);
+} */
+
+.recipe-of-day__box-times {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.recipe-of-day__box-times-img {
+  width: 28px;
+  height: 28px;
+}
+
+.recipe-of-day__box-times-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #25292D;
+  width: 78px;
+
+}
+
+/* .recipe-of-day__box-times-text::before {
+  content: url(../img/ic_timer.svg);
+} */
+
+@media (max-width: 1024px) { 
+  .recipe-of-day {
+    gap: 30px;
+    padding-top: 157px;
+  }
+  .recipe-of-day__box-title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+  .recipe-of-day__author-link {
+    top: 360px;
+  }
+  .recipe-of-day__box {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 330px) {
+  .recipe-of-day {
+    display: block;
+  }
+
+  .recipe-of-day__author-link {
+    top: 260px;
+  }
+
+  .recipe-of-day__box {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.header {
+  position: fixed;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.header--bg {
+  background-color: #FEFEFB;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__main {
+  display: flex;
+  gap: 80px;
+}
+
+.header__logo {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FDB100;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__nav-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #9196A1;
+  list-style-type: none;
+
+  width: 100%;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #9196A1;
+}
+
+.header__nav-link:hover {
+  color: #3A3C41;
+}
+
+.header__auth {
+  display: flex;
+  gap: 14px;
+}
+
+.header__auth-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FDB100;
+  align-self: center;
+
+}
+
+/* .header__auth-link::before {
+  content: url(../img/ic_login.svg);
+  margin-right: 14px;
+} */
+
+@media (max-width: 1200px) { 
+  .container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 1025px) { 
+  .container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 330px) { 
+  .header__wrapper {
+    display: block;
+  }
+  .header__main {
+    display: block;
+  }
+  .header__nav-list {
+    display: block;
+  }
+}

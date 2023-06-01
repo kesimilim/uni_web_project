@@ -1,383 +1,499 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
-    font-weight: 700;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat500";
-    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
-    font-weight: 500;
-    font-display: swap;
+  font-family: 'Montserrat500';
+  src: url(../fonts/Montserrat-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
-    font-weight: 400;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
-    font-weight: 600;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Mulish";
-    src: url(../fonts/Mulish-Regular-400.woff) format("woff");
-    font-weight: 400;
-    font-display: swap;
-}
-
-body {
+  font-family: 'Mulish';
+  src: url(../fonts/Mulish-Regular-400.woff) format('woff');
+  font-weight: 400;
+  font-display: swap;
 }
 
 .container {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.header {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    padding-top: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
+.container-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.header--bg {
-    background-color: #FEFEFB;
-}
-
-.header__logo {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FDB100;
-}
-
-.header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__nav-list {
-    display: flex;
-    justify-content: space-between;
-    width: 344px;
-    height: 22px;
-}
-
-.header__nav-item {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #9196A1;
-    list-style-type: none;
+@media (max-width: 1200px) {
+  .container {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
-.header__nav-link {
-    text-decoration: none;
-    color: #9196A1;
-}
-
-.header__nav-link:hover {
-    color: #3A3C41;
-}
-
-.header__auth {
-    display: flex;
-    height: 38px;
-    max-width: 112px;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.header__auth-link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    color: #FDB100;
-    margin-left: 14px;
-}
-
-.add-recipe {
-    max-width: 1440px;
-    height: 800px;
-    padding-left: 120px;
-    background-image: url(../img/img_main.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    padding-top: 211px;
-}
-
-.add-recipe__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;;
-    font-size: 72px;
-    color: #25292D;
-    text-align: left;
-    width: 50%;
-}
-
-.add-recipe__desc {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #4A525A;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    text-align: left;
-    width: 50%;
-}
-
-.add-recipe__buttons {
-    max-width: 500px;
-    display: block;
-}
-
-.add-recipe__button-add {
-    position: absolute;
-    background-color: #FDB100;
-    color: #fff;
-    border: none; 
-    border-radius: 16px; 
-    min-height: 60px; 
-    min-width: 278px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    margin-right: 24px;
-}
-
-.add-recipe__button-auth {
-    position: absolute;
-    background-color: white;
-    color: #FDB100;
-    border: 1px solid #FDB100; 
-    border-radius: 16px; 
-    min-height: 60px; 
-    min-width: 216px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    margin-left: 302px;
-}
-
-.tags {
-    display: inline-block;
-    padding-top: 113px;
-    padding-left: 120px;
-    padding-right: 120px;
-}
-
-.tags__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    color: #25292D;
-}
-
-.tags__desc {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: #4A525A;
-}
-
-.tags__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 42px;
-    list-style: none;
-}
-
-.tags__item {
-    min-width: 278px;
-    min-height: 271px;
-    background-color: white;
-    box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
-    border-radius: 24px;
-    padding: 24px;
-    padding-bottom: 32px;
-    margin-right: 29px;
-}
-
-.tags__item-img {
-    padding-bottom: 24px;
-}
-
-.tags__item-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #25292D;
-    padding-bottom: 16px;
-}
-
-.tags__item-desc {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #4A525A;
-    max-width: 230px;
-    line-height: 30px;
-}
-
-.recipe-of-day__author-link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FDB100;
-}
-
-.recipe-of-day__box-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 60px;
-    color: #25292D;
-}
-
-.recipe-of-day__box-desc {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: #4A525A;
-}
-
-.recipe-of-day__box-fav-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #25292D;
-}
-
-.recipe-of-day__box-times-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #25292D;
-}
-
-.search__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 51px;
-    text-align: center;
-    
-    color: #25292D;
-}
-
-.search__desc {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-
-    text-align: center;
-    font-feature-settings: 'case' on;
-
-    color: #4A525A;
-}
-
-.search__box {
-
-}
-
-.search__box-input {
-    min-height: 73px; 
-    min-width: 278px;
-    background: white;
-    border: none;
-    box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
-    border-radius: 16px;
-    margin-right: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color:  #808080;
-    padding-left: 32px;
-}
-
-.search__box-button {
-    position: absolute;
-    background-color: #FDB100;
-    color: #fff;
-    border: none; 
-    border-radius: 16px; 
-    min-height: 73px; 
-    min-width: 152px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.search__list-link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #808080;
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
+@media (max-width: 1024px) {
+  .container {
+    box-sizing: border-box;
     width: 100%;
-    background-color: #FBF9F4;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
-.footer__logo {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+@media (max-width: 330px) {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.add-recipe-dialog {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.add-recipe-dialog__button_exit {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.add-recipe-dialog__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #25292d;
+}
+
+.add-recipe-dialog__desc {
+}
+
+.add-recipe-dialog__title {
+  margin-top: 19px;
+}
+
+.authorization__form-button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 16px;
+  height: 45px;
+  width: 25%;
+  background-color: #fdb100;
+  border: none;
+  color: #ffffff;
+  font-weight: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.add-recipe-dialog__button {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+
+.add-recipe-dialog__desc {
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.add-recipe-dialog__button-login {
+    background-color: #FDB100;
+  color: #fff;
+  border: none; 
+  border-radius: 16px; 
+  min-height: 60px; 
+  min-width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.add-recipe-dialog__button-registration {
+  max-width: 278px;
+  background-color: transparent;
+  border: 1px solid #fdb100;
+  color: #fdb100;
+  width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 278px;
+
+  background-color: white;
+  color: #FDB100;
+  border: 1px solid #FDB100; 
+  border-radius: 16px; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.add-recipe-dialog__button-registration:hover {
+  color: #ffffff;
+  background-color: #fdb100;
+}
+
+.add-recipe-dialog__button-login:hover {
+  color: #fdb100;
+  background-color: #ffffff;
+  border: 1px solid #fdb100;
+}
+
+.registration {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.registration__button_exit {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.registration__title {
+  margin-top: 20px;
+}
+
+.registration__button {
+  margin-top: 20px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+    .registration__button-reg {
+    background-color: #FDB100;
+  color: #fff;
+  border: none; 
+  border-radius: 16px; 
+  min-height: 60px; 
+  min-width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.registration__button-cancel {
+  max-width: 278px;
+  background-color: transparent;
+  border: 1px solid #fdb100;
+  color: #fdb100;
+  width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 278px;
+
+  background-color: white;
+  color: #FDB100;
+  border: 1px solid #FDB100; 
+  border-radius: 16px; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.registration__button-cancel:hover {
+  color: #ffffff;
+  background-color: #fdb100;
+}
+
+.registration__button-reg:hover {
+  color: #fdb100;
+  background-color: #ffffff;
+  border: 1px solid #fdb100;
+}
+
+.registration__link {
+  position: absolute;
+  width: 237px;
+height: 26px;
+text-align: center;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+color: #FDB100;
+bottom: 60px;
+border-bottom: 2px dashed;
+left: 231px;
+}
+
+.registration__input-name {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 47px;
+}
+
+.registration__input-login {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 20px;
+}
+
+.registration__input {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.registration__input-password {
+  height: 50px;
+  width: 278px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+}
+
+.registration__input-repeat-password {
+  height: 50px;
+  width: 278px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+}
+
+.registration__password-desc {
+  width: 276px;
+height: 28px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 28px;
+/* identical to box height, or 233% */
+
+display: flex;
+align-items: center;
+
+color: rgba(37, 41, 45, 0.3);
+}
+
+.login {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.login__button_exit {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.login__title {
+  margin-top: 20px;
+}
+
+    .login__button {
+  margin-top: 30px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+    .login__button-login {
+    background-color: #FDB100;
+  color: #fff;
+  border: none; 
+  border-radius: 16px; 
+  min-height: 60px; 
+  min-width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.login__button-cancel {
+  max-width: 278px;
+  background-color: transparent;
+  border: 1px solid #fdb100;
+  color: #fdb100;
+  width: 278px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 278px;
+
+  background-color: white;
+  color: #FDB100;
+  border: 1px solid #FDB100; 
+  border-radius: 16px; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.login__button-cancel:hover {
+  color: #ffffff;
+  background-color: #fdb100;
+}
+
+.login__button-login:hover {
+  color: #fdb100;
+  background-color: #ffffff;
+  border: 1px solid #fdb100;
+}
+
+.login__link {
+  position: absolute;
+  margin-top: 40px;
     color: #FDB100;
+  border-bottom: 2px dashed;
+  width: 237px;
+  height: 26px;
+  text-align: center;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  bottom: 60px;
+  left: 231px;
 }
 
-.footer__copyright {
-    font-family: 'Montserrat500';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    color: #4A525A;
+.login__input-login {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 47px;
+}
+
+.login__input-password {
+  height: 50px;
+  width: 580px;
+  background: white;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  padding-left: 32px;
+  margin-top: 20px;
 }
