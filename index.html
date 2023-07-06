@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="styles/recipe-of-day.css" />
     <link rel="stylesheet" href="styles/search.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <script src="scripts/script.js"></script>
   </head>
   <body>
+    <div id="progress">
+      <img src="img/ic_top.svg" alt="">
+    </div>
     <header class="header">
       <div class="header__wrapper container">
         <div class="header__main">
@@ -101,8 +105,20 @@
         <div class="recipe-of-day__box">
           <div class="recipe-of-day__box-img-count">
             <div class="recipe-of-day__box-fav">
-              <img class="recipe-of-day__box-fav-img" src="img/ic_fav.svg" />
-              <p class="recipe-of-day__box-fav-text">356</p>
+              <button class="button_fav" type="button">
+                <svg class="recipe-of-day__box-fav-img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5" clip-path="url(#clip0_207_40)">
+                  <path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 12.28 5.4 15.36 10.55 20.04L12 21.35L13.45 20.03C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3ZM12.1 18.55L12 18.65L11.9 18.55C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5C9.04 5 10.54 5.99 11.07 7.36H12.94C13.46 5.99 14.96 5 16.5 5C18.5 5 20 6.5 20 8.5C20 11.39 16.86 14.24 12.1 18.55Z"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_207_40">
+                  <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                <!-- <img class="recipe-of-day__box-fav-img" src="img/ic_fav.svg" /> -->
+              </button>
+              <span class="recipe-of-day__box-fav-text">356</span>
             </div>
             <div class="recipe-of-day__box-times">
               <img
@@ -154,62 +170,64 @@
           </form>
         </div>
       </section>
-      <section class="add-recipe-dialog container-form">
-        <button class="add-recipe-dialog__button_exit" href="#">
-          <img src="./img/ic_close.svg" />
-        </button>
-        <h2 class="add-recipe-dialog__title">Войдите в профиль</h2>
-        <p class="add-recipe-dialog__desc">
-          Добавлять рецепты могут только зарегистрированные пользователи.
-        </p>
-        <div class="add-recipe-dialog__button">
-          <button
-            class="add-recipe-dialog__button-login"
-            type="login"
-            name="authorization__form-button-login"
-          >
-            Войти
-          </button>
-          <button
-            class="add-recipe-dialog__button-registration"
-            type="sign up"
-            name="authorization__form-button-signup"
-          >
-            Регистрация
-          </button>
-        </div>
-      </section>
-      <section class="registration container-form">
-        <button class="registration__button_exit" href="#">
+      <div class="modal hide">
+        <form class="add-recipe-dialog container-form hide" action="">
+          <button class="add-recipe-dialog__button_exit" href="#">
             <img src="./img/ic_close.svg" />
           </button>
-        <h2 class="registration__title">Регистрация</h2>
-        <input class="registration__input-name" type="text" placeholder="Имя" />
-        <input class="registration__input-login" type="text" placeholder="Логин" />
-        <div class="registration__input">
-          <input class="registration__input-password" type="password" name="" id="" placeholder="Пароль" />
-          <input class="registration__input-repeat-password"  type="password" name="" id="" placeholder="Повторите пароль" />
-        </div>
-        <p class="registration__password-desc">Минимум 8 символов</p>
-        <div class="registration__button">
-          <button class="registration__button-reg">Зарегистрироваться</button>
-          <button class="registration__button-cancel">Отмена</button>
-        </div>
-        <p class="registration__link">У меня уже есть аккаунт</a>
-      </section>
-      <section class="login container-form">
-        <button class="login__button_exit" href="#">
-            <img src="./img/ic_close.svg" />
-          </button>
-        <h2 class="login__title">Войти</h2>
-        <input class="login__input-login" type="text" placeholder="Логин" />
-        <input class="login__input-password" type="password" name="" id="" placeholder="Пароль" />
-        <div class="login__button">
-          <button class="login__button-login">Войти</button>
-          <button class="login__button-cancel">Отмена</button>
-        </div>
-        <p class="login__link">У меня уже есть аккаунт</a>
-      </section>
+          <h2 class="add-recipe-dialog__title">Войдите в профиль</h2>
+          <p class="add-recipe-dialog__desc">
+            Добавлять рецепты могут только зарегистрированные пользователи.
+          </p>
+          <div class="add-recipe-dialog__button">
+            <button
+              class="add-recipe-dialog__button-login"
+              type="login"
+              name="authorization__form-button-login"
+            >
+              Войти
+            </button>
+            <button
+              class="add-recipe-dialog__button-registration"
+              type="sign up"
+              name="authorization__form-button-signup"
+            >
+              Регистрация
+            </button>
+          </div>
+        </form>
+        <form class="registration container-form hide" action="">
+          <button class="registration__button_exit" href="#">
+              <img src="./img/ic_close.svg" />
+            </button>
+          <h2 class="registration__title">Регистрация</h2>
+          <input class="registration__input-name" type="text" placeholder="Имя" />
+          <input class="registration__input-login" type="text" placeholder="Логин" />
+          <div class="registration__input">
+            <input class="registration__input-password" type="password" name="" id="" placeholder="Пароль" />
+            <input class="registration__input-repeat-password"  type="password" name="" id="" placeholder="Повторите пароль" />
+          </div>
+          <p class="registration__password-desc">Минимум 8 символов</p>
+          <div class="registration__button">
+            <button class="registration__button-reg">Зарегистрироваться</button>
+            <button class="registration__button-cancel">Отмена</button>
+          </div>
+          <p class="registration__link">У меня уже есть аккаунт</a>
+        </form>
+        <form class="login container-form hide" action="" >
+          <button class="login__button_exit" href="#">
+              <img src="./img/ic_close.svg" />
+            </button>
+          <h2 class="login__title">Войти</h2>
+          <input class="login__input-login" type="text" placeholder="Логин" />
+          <input class="login__input-password" type="password" name="" id="" placeholder="Пароль" />
+          <div class="login__button">
+            <button class="login__button-login">Войти</button>
+            <button class="login__button-cancel">Отмена</button>
+          </div>
+          <p class="login__link">У меня уже есть аккаунт</a>
+        </form>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer_wrapper container">
